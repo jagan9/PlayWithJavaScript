@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Apple</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: blue;
+			color: white;
+			width: 100%;
+			height: 60px;
+		}
+
+		header ul {
+			position: absolute;
+			top: 1%;
+			left: 12%;
+			align-items: center;
+		}
+
+		header ul li {
+			display: inline-block;
+			padding: 10px 30px;
+
+
+		}
+
+		header ul li a {
+			text-decoration: none;
+			color: white;
+			font-size: 1.3m;
+		}
+
+		header ul li i {
+			position: relative;
+			cursor: pointer;
+		}
+
+		header ul li i:hover {
+			border-bottom: 3px solid white;
+			border-radius: 10%;
+
+		}
+
+		.second {
+			background-color: #CCD80D;
+			float: right;
+			width: 30%;
+			padding: 2% 3%;
+			border-radius: 10px;
+			margin-right: 7%;
+			margin-top: 3%;
+			height: 550px;
+
+		}
+
+		.first {
+			float: left;
+			width: 46%;
+
+		}
+
+		.first img {
+			height: 600px;
+			width: 100%;
+		}
+
+		.third img {
+			margin-top: -60px;
+			height: 700px;
+			width: 30%;
+			float: right;
+			margin-right: 10%;
+		}
+
+		.four {
+			background-color: #A569BD;
+			float: left;
+			width: 40%;
+			height: 450px;
+			padding: 20px 30px;
+
+			border-radius: 10px;
+			margin-left: 7%;
+			margin-top: 3%;
+
+		}
+
+		.five img {
+			height: 700px;
+			float: left;
+			margin-left: 4%;
+			width: 30%;
+
+		}
+
+		.six {
+			background-color: #58D68D;
+			float: right;
+			width: 40%;
+			height: 500px;
+			padding: 20px 30px;
+
+			border-radius: 10px;
+			margin-right: 7%;
+			margin-top: 3%;
+
+		}
+
+		.headimg {
+			width: 88%;
+			margin-left: 7%;
+			margin-right: 5%;
+
+
+		}
+
+		.des {
+			background-image: linear-gradient(to right, #E74C3C, #17A589);
+
+			width: 90%;
+			margin-right: 5%;
+			margin-left: 5%;
+			height: 60px;
+			border-radius: 10px;
+		}
+
+		.des h1 {
+			text-align: center;
+			color: #fff;
+			font-size: 2.4em;
+			padding-top: 5px;
+		}
+
+		.des1 h1 {
+			text-align: center;
+			color: red;
+			font-size: 2.4em;
+			padding-top: 10px;
+		}
+
+		.des1 a {
+			text-align: center;
+			color: blue;
+			padding-top: 10px;
+			text-decoration: none;
+			position: absolute;
+			left: 46%;
+		}
+
+		.des1 a:hover {
+			border-bottom: 2px solid blue;
+		}
+
+		.images {
+			position: relative;
+			top: 0px;
+
+			text-align: center;
+			margin: 40px;
+
+		}
+
+		.images ul li {
+			display: inline;
+
+		}
+
+		.images ul li img {
+			width: 300px;
+			height: 300px;
+
+		}
+
+		.ri {
+			position: relative;
+			top: 0px;
+			margin: 20px;
+			text-align: center;
+
+		}
+
+		.ri li {
+			display: inline-block;
+			padding: 0px 90px;
+		}
+
+		.ri li a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		.ri li a:hover {
+			border-bottom: 1px solid blue;
+		}
+
+		.buynow {
+			position: relative;
+			top: 0px;
+			margin: 20px;
+			text-align: center;
+
+		}
+
+		.buynow li {
+			display: inline-block;
+			padding: 10px 110px;
+		}
+
+		.buynow li a {
+			text-decoration: none;
+			color: blue;
+
+			border-radius: 10px;
+			background-color: yellow;
+			padding: 8px 14px;
+
+		}
+
+		.buynow li a:hover {
+			background-color: blue;
+			color: white;
+		}
+
+		.ri1 {
+			position: relative;
+			top: 0px;
+			margin: 20px;
+			text-align: center;
+
+		}
+
+		.ri1 li {
+			display: inline-block;
+			padding: 0px 90px;
+		}
+
+		.ri1 li a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		.ri1 li a:hover {
+			border-bottom: 1px solid blue;
+		}
+
+		.buynow1 {
+			position: relative;
+			top: 0px;
+			margin: 20px;
+			text-align: center;
+
+		}
+
+		.buynow1 li {
+			display: inline-block;
+			padding: 10px 110px;
+		}
+
+		.buynow1 li a {
+			text-decoration: none;
+			color: blue;
+
+			border-radius: 10px;
+			background-color: yellow;
+			padding: 8px 14px;
+
+		}
+
+		.buynow1 li a:hover {
+			background-color: blue;
+			color: white;
+		}
+
+		.other {
+			position: relative;
+			text-align: center;
+			font-size: 1.7em;
+			text-decoration: underline;
+		}
+
+		.li {
+			position: relative;
+			left: 0%;
+			padding: 30px 30px;
+			float: left;
+			text-decoration: none;
+			list-style-type: none;
+		}
+
+		.li ul li {
+			text-decoration: none;
+			list-style-type: none;
+			font-size: 0.8em;
+			line-height: 40px;
+			cursor: pointer;
+
+		}
+
+		.li ul li:hover {
+			text-decoration: underline;
+
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+		<ul>
+			<li><i class="material-icons">search</i></li>
+			<li><a href="#">Mac</a></li>
+			<li><a href="#">ipad</a></li>
+			<li><a href="#">iphone</a></li>
+			<li><a href="#">Watch</a></li>
+			<li><a href="#">TV</a></li>
+			<li><a href="#">Music</a></li>
+			<li><a href="#">Support</a></li>
+			<li><i class="material-icons">search</i></li>
+			<li><i class="material-icons">shop</i></li>
+		</ul>
+
+
+	</header>
+	<!-- first -->
+	<div class="des1">
+		<h1>Our brand new mobiles</h1>
+		<a href="#">know more</a>
+	</div>
+	<div class="headimg"><img src="4.jpg"></div>
+
+	<div class="des">
+		<h1>Top sellers of the week.</h1>
+	</div>
+	<!-- second  -->
+	<div style="
+width: 99.8%;
+height: 700px;">
+		<div class="first">
+			<img src="1.jpg">
+		</div>
+		<div class="second">
+			<h1 style="color: blue;text-decoration: underline;">iphone XR</h1><br>
+			<p>Price:$52,500.00 <br><br>
+				Ratings:4.5(13,256) <br><br>
+				Display:6.1inch Liquid Retina HD display <br><br>
+				Camera:12MP camera <br><br>
+				Front Camera:7MP TrueDepth camera<br><br>
+				Face/Touch ID:Face ID<br><br>
+
+				Chip:A12 Bionic chip with next-generation Neural Engine<br><br>
+				Charging:✓ (works with Qi chargers) <br><br>
+
+
+
+
+
+				<a href="#">read more about it.</a>
+			</p>
+
+
+		</div>
+	</div>
+	<!-- third  -->
+	<div style="
+width: 99.8%;
+height: 700px;">
+		<div class="third">
+			<img src="2.jpg">
+		</div>
+		<div class="four">
+			<h1 style="color: blue;text-decoration: underline;"> iphone X</h1><br>
+			<p>Price:$52,000.00 <br><br>
+				Ratings:4.6(10,256) <br><br>
+				Display:7inch Liquid Retina HD display <br><br>
+				Camera:13MP camera <br><br>
+				Front Camera:6MP TrueDepth camera<br><br>
+				Face/Touch ID:Face ID<br><br>
+
+				Chip:A12 Bionic chip with next-generation Neural Engine<br><br>
+				Charging:✓ (works with Qi chargers) <br><br>
+				<a href="#">read more about it.</a>
+			</p>
+
+
+		</div>
+
+	</div>
+	<!-- four-->
+	<div style="
+width: 99.8%;
+height: 700px;">
+		<div class="five">
+			<img src="3.jpg">
+		</div>
+		<div class="six">
+			<h1 style="color: blue;text-decoration: underline;">iphone 8</h1><br>
+			<p>Price:$52,500.00 <br><br>
+				Ratings:4.8(256) <br><br>
+				Display:7inch Liquid Retina HD display <br><br>
+				Camera:12MP camera <br><br>
+				Front Camera:8MP TrueDepth camera<br><br>
+				Face/Touch ID:Face ID<br><br>
+
+				Chip:A11 Bionic chip with next-generation Neural Engine<br><br>
+				Charging:✓ (works with Qi chargers) <br><br>
+				<a href="#">read more about it.</a>
+			</p>
+
+
+		</div>
+	</div>
+	<div class="other">
+		<h1>OUR OTHER PRODUCTS</h1>
+	</div>
+
+
+
+	<div class="images">
+		<ul>
+			<li><img src="5.jpg"></li>
+			<li><img src="6.jpg"></li>
+			<li><img src="8.jpg"></li>
+
+		</ul>
+	</div>
+	<ul class="ri">
+		<li><a href="#">View related items ></a></li>
+		<li><a href="#">View related items ></a></li>
+		<li><a href="#">View related items ></a></li>
+
+	</ul>
+	<ul class="buynow">
+		<li><a href="#">BUY NOW</a></li>
+		<li><a href="#">BUY NOW</a></li>
+		<li><a href="#">BUY NOW</a></li>
+
+	</ul>
+	</div>
+	<hr>
+	<div class="images">
+		<ul>
+			<li><img src="7.jpg"></li>
+			<li><img src="9.jpg"></li>
+			<li><img src="10.jpg"></li>
+
+		</ul>
+	</div>
+	<ul class="ri1">
+		<li><a href="#">View related items ></a></li>
+		<li><a href="#">View related items ></a></li>
+		<li><a href="#">View related items ></a></li>
+
+	</ul>
+	<ul class="buynow1">
+		<li><a href="#">BUY NOW</a></li>
+		<li><a href="#">BUY NOW</a></li>
+		<li><a href="#">BUY NOW</a></li>
+
+	</ul>
+	<br>
+	<hr><br>
+	<!-- tables -->
+	<table class="tables" cellspacing="0px;" width="100%;">
+		<tr>
+			<th style="padding: 10px 0px; text-decoration: underline;">PRODUCT NAME</th>
+			<th style="text-decoration: underline;">STARTING PRICE</th>
+			<th style="text-decoration: underline;">ENDING PRICE</th>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">laptop</td>
+			<td>$2000</td>
+			<td>$30000</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">TV</td>
+			<td>$2088</td>
+			<td>$30800</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">mobile</td>
+			<td>$208</td>
+			<td>$30080</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">watch</td>
+			<td>$2007</td>
+			<td>$300990</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">earphones</td>
+			<td>$2090</td>
+			<td>$30009</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">headset</td>
+			<td>$2090</td>
+			<td>$30009</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td style="padding: 10px 40px;">ipad</td>
+			<td>$2010</td>
+			<td>$30080</td>
+		</tr>
+	</table>
+	<br>
+	<hr><br>
+	<!-- select -->
+	<label style="margin-left:50px;font-size: 1.3em;font-weight: bold;
+text-transform: uppercase; ">leave your rating here...</label>
+	<select>
+		<option>*(one star)</option>
+		<option>**(two star)</option>
+		<option>***(three star)</option>
+		<option>****(four star)</option>
+		<option>*****(five star)</option>
+	</select>
+	<br><br>
+	<hr><br><br>
+
+	<!-- iframe -->
+	<p style="margin-left:10%; ">
+		<iframe width="80%" height="450px" src="https://en.wikipedia.org/wiki/Apple_Inc." frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p><br><br>
+	<!-- footer -->
+	<div style=" background-color:#F3F3EE ; ">
+		<div style="margin: 0px 50px;  padding: 10px 20px; color:#828281   ;">
+			<p>1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of
+				iPhone 8 Plus and iPhone X in good condition. iPhone SE promotional pricing is after trade-in of iPhone
+				8 in good condition. Additional trade‑in values require purchase of a new iPhone, subject to
+				availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse
+				or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid,
+				government-issued photo ID (local law may require saving this information). Sales tax may be assessed on
+				full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly
+				pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens
+				One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon.
+				Taxes and shipping not included. Additional Apple Card Monthly Installments terms are in the Customer
+				Agreement. Additional iPhone Payments terms are here.</p><br>
+			<p>2. Trade‑in values vary. Apple Watch Series 5 promotional pricing is after trade‑in of Apple Watch Series
+				4 in good condition. Additional trade‑in values require purchase of a new Apple Watch, subject to
+				availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse
+				or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid,
+				government-issued photo ID (local law may require saving this information). Sales tax may be assessed on
+				full value of new Apple Watch. Additional terms from Apple or Apple’s trade-in partners may apply. Offer
+				is available for a limited time only.</p><br>
+			<p>Magic Keyboard sold separately.</p><br>
+			<p>Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3
+				months after eligible device activation. Plan automatically renews until cancelled. Restrictions and
+				other terms apply.</p>
+		</div><br>
+	</div>
+	<hr><br>
+	<!-- lists -->
+	<div class="foot" style="overflow: hidden;">
+		<ul>
+			<li class="li">
+				<ul>
+					<li style="font-weight: bold; text-decoration: underline;">shop and learn</li>
+					<li>Mac</li>
+					<li>ipad</li>
+					<li>iphone</li>
+					<li>Watch</li>
+					<li>TV</li>
+					<li>Music</li>
+					<li>Airpods</li>
+					<li>Homepad</li>
+					<li>ipod touch</li>
+					<li>Accessories</li>
+					<li>Gift</li>
+				</ul>
+				<br><br>
+			</li>
+			<li class="li">
+				<ul>
+					<li style="font-weight: bold;text-decoration: underline;">sevices</li>
+					<li>apple music</li>
+					<li>apple news+</li>
+					<li>apple TV+</a></li>
+					<li>Watch</li>
+					<li>apple arcade</li>
+					<li>apple books</li>
+					<li>Apple card</li>
+					<li>icoud</li>
+					<ul>
+						<li style="font-weight: bold;text-decoration: underline;">account</li>
+						<li>manage your apple Id</li>
+						<li>app store account</li>
+						<li>icloud.com</li>
+					</ul>
+				</ul>
+				<br><br>
+			</li>
+			<li class="li">
+				<ul>
+					<li style="font-weight: bold;text-decoration: underline;">apple store</li>
+					<li>find a store</li>
+					<li>shop online</li>
+					<li>genius bar</li>
+					<li>today at apple</li>
+					<li>apple camp</li>
+					<li>field camp</li>
+					<li>apple store app</li>
+					<li>financing</li>
+					<li>apple trade in</li>
+					<li>order satus</li>
+					<li>shopping help</li>
+				</ul> <br><br>
+			</li>
+			<li class="li">
+				<ul>
+					<li style="font-weight: bold;text-decoration: underline;">for business</li>
+					<li>apple and business</li>
+					<li>shop for business</li>
+					<ul>
+						<li style="font-weight: bold;text-decoration: underline;">for education</li>
+						<li>apple and education</li>
+						<li>shop for k-12</li>
+						<li>shop for college</li>
+					</ul>
+					<ul>
+						<li style="font-weight: bold;text-decoration: underline;">for health care</li>
+						<li>apple in healthcare</li>
+						<li>health on apple watch</li>
+						<li>health records on phone</li>
+					</ul>
+					<ul>
+						<li style="font-weight: bold;text-decoration: underline;">for governament
+					</ul>
+					<li>shop for govt.</li>
+					<li>order satus</li>
+			</li>
+		</ul> <br><br>
+		</li>
+		</ul>
+
+	</div>
+	<br><br><br>
+	<!-- end  -->
+
+</body>
+
+</html>
